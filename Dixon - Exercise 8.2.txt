@@ -1,0 +1,24 @@
+createdb -U postgres albuminfo
+psql -U postgres albuminfo
+
+
+create table artist (
+  id serial primary key,
+  name varchar (100),
+  dateofbirth date,
+  cityofbirth varchar (100),
+  genre varchar (100)
+);
+
+create table album (
+  id serial primary key,
+  albumtitle varchar (100),
+  release date
+);
+
+create table track (
+  id serial primary key,
+  tracktitle varchar (100),
+  tracklength varchar(100),
+  composer varchar (100)
+);
